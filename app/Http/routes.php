@@ -12,10 +12,27 @@
 */
 use Illuminate\Http\Request;
 
-Route::get('/states','StateController@index');
-
-
-Route::get('/countries','CountryController@index');
+/*
+Landing page
+*/
 Route::get('/', function() {
   return 'test';
 });
+
+/*
+States routes
+*/
+Route::get('/states','StateController@index');
+Route::post('/states','StateController@create');
+Route::get('/states/{id}','StateController@show');
+Route::put('/states/{id}','StateController@update');
+Route::delete('/states{id}','StateController@destroy');
+/*
+Countries routes
+*/
+Route::get('/countries','CountryController@index');
+
+/*
+Fruits routes
+*/
+Route::get('/fruits','FruitController@index');
