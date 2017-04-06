@@ -31,6 +31,10 @@ Route::delete('/states{id}','StateController@destroy');
 Countries routes
 */
 Route::get('/countries','CountryController@index');
+Route::post('/countries','CountryController@create');
+Route::get('/countries/{id}','CountryController@show');
+Route::put('/countries/{id}','CountryController@update');
+Route::delete('/countries{id}','CountryController@destroy');
 
 /*
 Fruits routes

@@ -16,4 +16,29 @@ class StateController extends Controller
     return Response::json($states);
   }
 
+  public function create (Request $request)
+  {
+    State::create($request->all());
+    return Response::json(['created' => true]);
+  }
+
+  public function show ($id)
+  {
+    $state = State::find($id);
+    return Response::json($state);
+  }
+
+  public function update (Request $request, $id)
+  {
+    $state = State::find($id);
+    $success->update($request->all());
+    return Response::json(['updated' => success]);
+  }
+
+  public function destroy ($id)
+  {
+    $state = State::find($id);
+    $state->delete();
+    return Response::json(['deleted' => true]);
+  }
 }
