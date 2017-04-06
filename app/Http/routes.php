@@ -12,6 +12,7 @@
 */
 use Illuminate\Http\Request;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/unitedstates','UnitedstateController@index');
+
+
+Route::get('/europes','EuropeController@index');
