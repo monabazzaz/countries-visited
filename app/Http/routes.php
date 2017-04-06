@@ -12,7 +12,10 @@
 */
 use Illuminate\Http\Request;
 
-Route::get('/unitedstates','UnitedstateController@index');
+Route::get('/states','StateController@index');
 
 
-Route::get('/europes','EuropeController@index');
+Route::get('/countries','CountryController@index');
+Route::get('/', function() {
+  return 'test';
+});

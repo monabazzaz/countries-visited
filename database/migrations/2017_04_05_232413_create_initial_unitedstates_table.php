@@ -9,7 +9,7 @@ class CreateInitialUnitedstatesTable extends Migration
 
     public function up()
     {
-      Schema::create('unitedstates', function (Blueprint $table) {
+      Schema::create('states', function (Blueprint $table) {
         $table->increments('id');
         $table->string('city');
         $table->string('state');
@@ -21,6 +21,6 @@ class CreateInitialUnitedstatesTable extends Migration
 
     public function down()
     {
-      Schema::dropIfExists('unitedstates');
+      Schema::dropIfExists('states');
     }
 }

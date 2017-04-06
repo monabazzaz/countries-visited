@@ -12,7 +12,7 @@ class CreateInitialEuropesTable extends Migration
     //  */
     public function up()
     {
-      Schema::create('europes', function (Blueprint $table) {
+      Schema::create('countries', function (Blueprint $table) {
         $table->increments('id');
         $table->string('city');
         $table->string('country');
@@ -29,6 +29,6 @@ class CreateInitialEuropesTable extends Migration
     //  */
     public function down()
     {
-      Schema::dropIfExists('europes');
+      Schema::dropIfExists('countries');
     }
 }
