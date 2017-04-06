@@ -40,3 +40,7 @@ Route::delete('/countries{id}','CountryController@destroy');
 Fruits routes
 */
 Route::get('/fruits','FruitController@index');
+Route::post('/fruits','FruitController@create');
+Route::get('/fruits/{id}','FruitController@show');
+Route::put('/fruits/{id}','FruitController@update');
+Route::delete('/fruits{id}','FruitController@destroy');
