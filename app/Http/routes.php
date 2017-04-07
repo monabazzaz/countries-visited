@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 Landing page
 */
 Route::get('/', function() {
-  return view('home');
+  return view('welcome');
 });
 
 /*
