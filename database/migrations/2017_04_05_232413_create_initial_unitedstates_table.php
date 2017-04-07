@@ -7,6 +7,9 @@ use Illuminate\Database\Migrations\Migration;
 class CreateInitialUnitedstatesTable extends Migration
 {
 
+  /*
+  Migration for the state table and values
+  */
     public function up()
     {
       Schema::create('states', function (Blueprint $table) {
@@ -19,6 +22,9 @@ class CreateInitialUnitedstatesTable extends Migration
       });
     }
 
+  /*
+  Drops the state table into the database if the table exists
+  */
     public function down()
     {
       Schema::dropIfExists('states');

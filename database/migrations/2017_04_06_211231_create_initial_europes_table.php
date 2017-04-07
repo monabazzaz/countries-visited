@@ -10,6 +10,10 @@ class CreateInitialEuropesTable extends Migration
     //  *
     //  * @return void
     //  */
+
+    /*
+    Migration for the countries table and values
+    */
     public function up()
     {
       Schema::create('countries', function (Blueprint $table) {
@@ -27,6 +31,10 @@ class CreateInitialEuropesTable extends Migration
     //  *
     //  * @return void
     //  */
+
+    /*
+    Drops the countries table into the database if the table exists
+    */
     public function down()
     {
       Schema::dropIfExists('countries');

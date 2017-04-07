@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel</title>
+        <title>States, Countries and Fruits API</title>
 
         <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Droid+Sans+Mono" rel="stylesheet">
 
+<!-- The styles for the homepage of the API -->
         <style>
             html, body {
                 height: 100%;
@@ -16,7 +17,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                background-color: #f0f0f0;
+                background-color: #ffffff;
             }
 
             .container {
@@ -63,6 +64,7 @@
                 padding-bottom: 20px;
                 background-color: #b7b7b7;
             }
+
             .credits p {
                 color: #1da0a3;
             }
@@ -79,14 +81,15 @@
         </style>
     </head>
     <body>
+      <!-- The body content of the homepage including title, description and credits -->
         <div class="container">
             <div class="content">
                 <div class="title">Travel and Fruits API</div>
-                  <div class="api">This is a Laravel API that integrates PHP and allows a user to create, read, update or delete paramaters for three main elements: <a href="/states">states</a>, <a href="/countries">countries</a> and <a href="/fruits">fruits</a>.</div>
+                  <div class="api">This is a Laravel API that integrates PHP and allows a user to create, read, update or delete parameters for three main elements: <a href="/states">states</a>, <a href="/countries">countries</a> and <a href="/fruits">fruits</a>.</div>
                   <div class="credits">
                     <h3>Credits:</h3>
                     <p><a href="https://laravel.com/">Laravel</a></p>
-                    <p><a href="#">Gitbook</a></p>
+                    <p><a href="https://monabazzaz.gitbooks.io/states-countries-and-fruits-api/content/">Gitbook</a></p>
                     <p><a href="https://github.com/monabazzaz/countries-visited">Github</a></p>
                     <p><a href="http://monabazzaz.org/portfolio">My Portfolio</a></p>
                   </div>

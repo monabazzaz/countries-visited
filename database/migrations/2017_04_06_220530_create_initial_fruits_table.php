@@ -10,6 +10,10 @@ class CreateInitialFruitsTable extends Migration
     //  *
     //  * @return void
     //  */
+
+    /*
+    Migration for the fruits table and values
+    */
     public function up()
     {
       Schema::create('fruits', function (Blueprint $table) {
@@ -27,6 +31,10 @@ class CreateInitialFruitsTable extends Migration
     //  *
     //  * @return void
     //  */
+
+    /*
+    Drops the fruits table into the database if the table exists
+    */
     public function down()
     {
       Schema::dropIfExists('fruits');
